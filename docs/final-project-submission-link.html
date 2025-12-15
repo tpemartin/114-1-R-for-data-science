@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Submission Link System</title>
+    
+    <!-- React & ReactDOM -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    
+    <!-- Babel for JSX -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&display=swap');
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #f3f4f6;
+        }
+    </style>
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // Raw Data String
+        const rawDataString = `(001) 吳庭維https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(001) 張鐦仁https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(004) 曾盛群https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(005) 王苡芊https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(008) 鍾竺岑https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(009) 陳郁翔https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(012) 蘇筱恩https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(014) 莊子賢https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(015) 謝昀臻https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(016) 王寶倫https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(017) 林奕岑https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(018) 古聖維https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(019) 郭宥渝https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(020) 陳弘恩https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(021) 王閔玄https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(022) 林于倫https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(022) 陳旻榆https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(024) 林世芳https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(025) 葉子晴https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(025) 鄭宇媃https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(027) 王念筠https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(028) 廖述同https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(032) 黃筠雅https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(039) 洪慶民https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(044) 黃碩園https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(046) 田文心https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(047) 謝坤恩https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(053) 李淳芸https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(054) 李若綺https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(055) 劉思妤https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(056) 張舒涵https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(057) 彭致彥https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(060) 卓昌宏https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(062) 覃彥瑜https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(064) 傅思宸https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(065) 林慧欣https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(067) 鄭暐曦https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(068) 葉冠宏https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(071) 李嘉程https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(072) 李宥安https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(073) 楊喬甯https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(075) 陳品淳https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(078) 袁靖喬https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(080) 王頤https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(087) 周成威https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(088) 羅于倫https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(094) 賴柏元https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(099) ALFRED ANTONIOhttps://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(099) 王貞予https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(101) 溫家禎https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(105) 陳證宇https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(106) 陳尚恩https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(109) 邱宇婕https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(112) 姚玟卉https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(114) 張芷綺https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(116) 李翊誠https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(119) 王梓縈https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(122) 黃美森https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(124) 溫家樣https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(125) 鄧金沛https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(126) 魏秀芳https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(129) 廖美雲https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(130) 鄧天翼https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(132) 張桂薰https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(134) 匡顯國https://docs.google.com/forms/d/e/1FAIpQLSd2M51LBfE1yBf4L0JLMDpG9O8mR7LV6GqnVaUJSHm6adu3vw/viewform?usp=publish-editor
+(135) 張素美https://docs.google.com/forms/d/e/1FAIpQLSfca_4WTrY8Xr7gvKkxQ_9zVVJHFmV4ASfMgH1kQTV8KeKL-w/viewform?usp=publish-editor
+(136) 張華愛https://docs.google.com/forms/d/e/1FAIpQLSff3MqkzHQ_owkgb8nAZBfaL7EgaQwNcOO507bSOMEG1VtoNg/viewform?usp=publish-editor
+(138) 顏勇升https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor
+(144) 呂浩新https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(257) 曾耀鋒https://docs.google.com/forms/d/e/1FAIpQLSfc2X7_154YfU6_SDX_6NVOyo9GzDTWpMmudMRqTJjZn-Y_4Q/viewform?usp=publish-editor
+(416) 吳家弘https://docs.google.com/forms/d/e/1FAIpQLSdVCzT-QUSEsfX9t8DlFjhlJJb9aEWYfUlE3BKe9ViPvbHp5Q/viewform?usp=publish-editor`;
+
+        const { useState, useEffect, useMemo } = React;
+
+        const App = () => {
+            const [users, setUsers] = useState([]);
+            const [selectedId, setSelectedId] = useState("");
+            
+            // Function to parse the raw string
+            useEffect(() => {
+                const parsedData = rawDataString
+                    .trim()
+                    .split('\n')
+                    .map((line, index) => {
+                        // Regex explanation:
+                        // \((\d+)\) -> Capture ID number inside parentheses
+                        // \s* -> Allow whitespace
+                        // (.*?) -> Capture name (non-greedy)
+                        // (https:\/\/.*) -> Capture URL
+                        const match = line.match(/\((\d+)\)\s*(.*?)(https?:\/\/.*)/);
+                        if (match) {
+                            return {
+                                uniqueKey: index, // React requires a unique key
+                                id: match[1],
+                                name: match[2].trim(),
+                                url: match[3].trim()
+                            };
+                        }
+                        return null;
+                    })
+                    .filter(item => item !== null);
+                
+                // Sort by ID for easier finding
+                parsedData.sort((a, b) => parseInt(a.id) - parseInt(b.id));
+                setUsers(parsedData);
+            }, []);
+
+            const selectedUser = useMemo(() => {
+                return users.find(u => u.uniqueKey.toString() === selectedId);
+            }, [selectedId, users]);
+
+            return (
+                <div className="min-h-screen flex items-center justify-center p-4">
+                    <div className="bg-white rounded-2xl shadow-xl w-full max-w-md overflow-hidden border border-gray-100">
+                        {/* Title Section */}
+                        <div className="bg-blue-600 p-6 text-center">
+                            <h1 className="text-2xl font-bold text-white mb-2">
+                                <i className="ph ph-link-simple mr-2"></i>
+                                Submission Link Lookup
+                            </h1>
+                            <p className="text-blue-100 text-sm">Select your ID or Name to get the link</p>
+                        </div>
+
+                        <div className="p-6 space-y-6">
+                            {/* Dropdown Section */}
+                            <div className="space-y-2">
+                                <label htmlFor="user-select" className="block text-sm font-medium text-gray-700">
+                                    Select ID / Name
+                                </label>
+                                <div className="relative">
+                                    <select
+                                        id="user-select"
+                                        value={selectedId}
+                                        onChange={(e) => setSelectedId(e.target.value)}
+                                        className="block w-full pl-3 pr-10 py-3 text-base border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 sm:text-sm rounded-lg transition-shadow"
+                                    >
+                                        <option value="" disabled>-- Select --</option>
+                                        {users.map((user) => (
+                                            <option key={user.uniqueKey} value={user.uniqueKey}>
+                                                ({user.id}) {user.name}
+                                            </option>
+                                        ))}
+                                    </select>
+                                    <div className="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+                                        <i className="ph ph-caret-down text-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
+
+                            {/* Result Display Section */}
+                            <div className={`transition-all duration-300 ease-in-out ${selectedUser ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4 pointer-events-none absolute'}`}>
+                                {selectedUser && (
+                                    <div className="bg-blue-50 rounded-xl p-5 border border-blue-100 text-center space-y-4">
+                                        <div className="space-y-1">
+                                            <div className="text-xs font-semibold text-blue-500 tracking-wide uppercase">ID: {selectedUser.id}</div>
+                                            <div className="text-xl font-bold text-gray-900">{selectedUser.name}</div>
+                                        </div>
+                                        
+                                        <a 
+                                            href={selectedUser.url} 
+                                            target="_blank" 
+                                            rel="noopener noreferrer"
+                                            className="inline-flex items-center justify-center w-full px-5 py-3 text-base font-medium text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md hover:shadow-lg transition-all transform hover:-translate-y-0.5"
+                                        >
+                                            <i className="ph ph-paper-plane-right mr-2 text-xl"></i>
+                                            Go to Submission Form
+                                        </a>
+                                        <p className="text-xs text-gray-500 mt-2">Link opens in a new window</p>
+                                    </div>
+                                )}
+                            </div>
+                            
+                            {!selectedUser && (
+                                <div className="text-center py-8 text-gray-400">
+                                    <i className="ph ph-magnifying-glass text-4xl mb-2 opacity-50"></i>
+                                    <p className="text-sm">Please select from the menu above</p>
+                                </div>
+                            )}
+                        </div>
+                        
+                        {/* Footer */}
+                        <div className="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center text-xs text-gray-500">
+                            <span>Total records: {users.length}</span>
+                            <span>System Ready</span>
+                        </div>
+                    </div>
+                </div>
+            );
+        };
+
+        const root = ReactDOM.createRoot(document.getElementById('root'));
+        root.render(<App />);
+    </script>
+</body>
+</html>
