@@ -1,0 +1,280 @@
+{
+  "activities": [
+    {
+      "actors": [
+        {
+          "user": {
+            "knownUser": {
+              "isCurrentUser": true,
+              "personName": "people/104309662044541785997"
+            }
+          }
+        }
+      ],
+      "targets": [
+        {
+          "driveItem": {
+            "file": {},
+            "owner": {
+              "domain": {
+                "legacyId": "105525051478283738058",
+                "name": "gm.ntpu.edu.tw"
+              },
+              "user": {
+                "knownUser": {
+                  "isCurrentUser": true,
+                  "personName": "people/104309662044541785997"
+                }
+              }
+            },
+            "title": "114-1-B1F06-seating chart",
+            "name": "items/1Tzy9OPZ8kfAdBpfOCbM4gtc71FK_oDnBAvrrbsjYZLU",
+            "mimeType": "application/vnd.google-apps.spreadsheet",
+            "driveFile": {}
+          }
+        }
+      ],
+      "primaryActionDetail": {
+        "edit": {}
+      },
+      "actions": [
+        {
+          "detail": {
+            "edit": {}
+          }
+        }
+      ],
+      "timestamp": "2025-09-25T06:40:35.243Z"
+    },
+    {
+      "actors": [
+        {
+          "user": {
+            "knownUser": {
+              "personName": "people/104309662044541785997",
+              "isCurrentUser": true
+            }
+          }
+        }
+      ],
+      "primaryActionDetail": {
+        "edit": {}
+      },
+      "timestamp": "2025-09-25T06:40:07.004Z",
+      "actions": [
+        {
+          "detail": {
+            "edit": {}
+          }
+        }
+      ],
+      "targets": [
+        {
+          "driveItem": {
+            "driveFile": {},
+            "title": "114-1-B1F06-seating chart",
+            "mimeType": "application/vnd.google-apps.spreadsheet",
+            "name": "items/1Tzy9OPZ8kfAdBpfOCbM4gtc71FK_oDnBAvrrbsjYZLU",
+            "owner": {
+              "user": {
+                "knownUser": {
+                  "personName": "people/104309662044541785997",
+                  "isCurrentUser": true
+                }
+              },
+              "domain": {
+                "name": "gm.ntpu.edu.tw",
+                "legacyId": "105525051478283738058"
+              }
+            },
+            "file": {}
+          }
+        }
+      ]
+    },
+    {
+      "actors": [
+        {
+          "user": {
+            "knownUser": {
+              "isCurrentUser": true,
+              "personName": "people/104309662044541785997"
+            }
+          }
+        }
+      ],
+      "timestamp": "2025-09-25T06:39:29.215Z",
+      "actions": [
+        {
+          "detail": {
+            "edit": {}
+          }
+        }
+      ],
+      "targets": [
+        {
+          "driveItem": {
+            "name": "items/1Tzy9OPZ8kfAdBpfOCbM4gtc71FK_oDnBAvrrbsjYZLU",
+            "owner": {
+              "user": {
+                "knownUser": {
+                  "personName": "people/104309662044541785997",
+                  "isCurrentUser": true
+                }
+              },
+              "domain": {
+                "name": "gm.ntpu.edu.tw",
+                "legacyId": "105525051478283738058"
+              }
+            },
+            "driveFile": {},
+            "file": {},
+            "mimeType": "application/vnd.google-apps.spreadsheet",
+            "title": "114-1-B1F06-seating chart"
+          }
+        }
+      ],
+      "primaryActionDetail": {
+        "edit": {}
+      }
+    },
+    {
+      "timestamp": "2025-09-25T06:36:07.798Z",
+      "actors": [
+        {
+          "user": {
+            "knownUser": {
+              "isCurrentUser": true,
+              "personName": "people/104309662044541785997"
+            }
+          }
+        }
+      ],
+      "targets": [
+        {
+          "driveItem": {
+            "mimeType": "application/vnd.google-apps.spreadsheet",
+            "owner": {
+              "user": {
+                "knownUser": {
+                  "personName": "people/104309662044541785997",
+                  "isCurrentUser": true
+                }
+              },
+              "domain": {
+                "legacyId": "105525051478283738058",
+                "name": "gm.ntpu.edu.tw"
+              }
+            },
+            "file": {},
+            "title": "114-1-B1F06-seating chart",
+            "driveFile": {},
+            "name": "items/1Tzy9OPZ8kfAdBpfOCbM4gtc71FK_oDnBAvrrbsjYZLU"
+          }
+        }
+      ],
+      "actions": [
+        {
+          "detail": {
+            "edit": {}
+          }
+        }
+      ],
+      "primaryActionDetail": {
+        "edit": {}
+      }
+    },
+    {
+      "actions": [
+        {
+          "detail": {
+            "edit": {}
+          }
+        }
+      ],
+      "actors": [
+        {
+          "user": {
+            "knownUser": {
+              "isCurrentUser": true,
+              "personName": "people/104309662044541785997"
+            }
+          }
+        }
+      ],
+      "timestamp": "2025-09-25T06:36:04.727Z",
+      "targets": [
+        {
+          "driveItem": {
+            "mimeType": "application/vnd.google-apps.spreadsheet",
+            "file": {},
+            "title": "114-1-B1F06-seating chart",
+            "name": "items/1Tzy9OPZ8kfAdBpfOCbM4gtc71FK_oDnBAvrrbsjYZLU",
+            "owner": {
+              "user": {
+                "knownUser": {
+                  "isCurrentUser": true,
+                  "personName": "people/104309662044541785997"
+                }
+              },
+              "domain": {
+                "name": "gm.ntpu.edu.tw",
+                "legacyId": "105525051478283738058"
+              }
+            },
+            "driveFile": {}
+          }
+        }
+      ],
+      "primaryActionDetail": {
+        "edit": {}
+      }
+    },
+    {
+      "timestamp": "2025-09-25T06:35:54.551Z",
+      "actors": [
+        {
+          "user": {
+            "knownUser": {
+              "personName": "people/104309662044541785997",
+              "isCurrentUser": true
+            }
+          }
+        }
+      ],
+      "actions": [
+        {
+          "detail": {
+            "edit": {}
+          }
+        }
+      ],
+      "primaryActionDetail": {
+        "edit": {}
+      },
+      "targets": [
+        {
+          "driveItem": {
+            "owner": {
+              "user": {
+                "knownUser": {
+                  "isCurrentUser": true,
+                  "personName": "people/104309662044541785997"
+                }
+              },
+              "domain": {
+                "legacyId": "105525051478283738058",
+                "name": "gm.ntpu.edu.tw"
+              }
+            },
+            "file": {},
+            "driveFile": {},
+            "name": "items/1Tzy9OPZ8kfAdBpfOCbM4gtc71FK_oDnBAvrrbsjYZLU",
+            "title": "114-1-B1F06-seating chart",
+            "mimeType": "application/vnd.google-apps.spreadsheet"
+          }
+        }
+      ]
+    }
+  ]
+}
