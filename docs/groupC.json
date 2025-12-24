@@ -1,0 +1,24 @@
+[
+  [
+    "Timestamp",
+    "Name",
+    "School Id",
+    "Title",
+    "Video link",
+    "Summary",
+    "Github final project link",
+    "Honor code declaration"
+  ],
+  [
+    "2025-12-24T06:27:15.784Z",
+    "(126) 魏秀芳",
+    "411473126",
+    "Top-Rated IMDb Movies Data Analysis - Final Project",
+    "https://youtu.be/fYETH2eDvDQ",
+    "This project consists of a video explaining the summary of dataset and analysis of movie popularity and rating from IMDb and a shared google drive link containing the codebook file, CSV file, and EDA of the project.",
+    "https://drive.google.com/drive/folders/19w9Fe88iGzBmsAgxX73gy_ZqdvTv5N2h",
+    [
+      "I agree."
+    ]
+  ]
+]
