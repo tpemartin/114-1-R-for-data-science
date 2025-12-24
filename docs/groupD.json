@@ -1,0 +1,24 @@
+[
+  [
+    "Timestamp",
+    "Name",
+    "School Id",
+    "Title",
+    "Video link",
+    "Summary",
+    "Github final project link",
+    "Honor code declaration"
+  ],
+  [
+    "2025-12-24T09:28:51.891Z",
+    "(109) 邱宇婕",
+    "411473109",
+    "新竹縣國民中學學區資料分析",
+    "https://youtu.be/BQTDjeQpeTs",
+    "本專題使用政府開放資料平台之「新竹縣各鄉鎮市國民中學學區」資料，於 Google Colab 的 R 環境中進行探索性資料分析。透過建立 Codebook、分組統計與視覺化，分析各鄉鎮市國中分布及學區描述複雜度。另結合 AI R Learning Mentor 與 Identity 概念，展示 AI 輔助學習與資料分析整合之可能性。",
+    "https://drive.google.com/drive/folders/1_surP1OJBrcbqS9ZTZBfMy9FHqG5xaQq?usp=sharing",
+    [
+      "I agree."
+    ]
+  ]
+]
