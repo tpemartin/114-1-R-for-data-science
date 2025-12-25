@@ -44,5 +44,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-25T08:22:16.940Z",
+    "(054) 李若綺",
+    "411282054",
+    "Decoding the Sound of Success: A Spotify Global EDA",
+    "https://youtu.be/Tk6a0C4Zfr8",
+    "Project Overview This project explores a dataset of over 8,500 Spotify tracks to understand the relationship between artist influence and song popularity. By merging disparate datasets containing track metadata and artist metrics, the analysis identifies key trends in the modern music landscape, specifically focusing on the \"streaming era\" distribution of singles versus albums.\n\nKey Objectives\n\nData Integration: Combined multiple CSV sources using track_id as a unique identifier to create a comprehensive analysis master file.\n\nData Health Assessment: Performed a systematic check for missing values (NAs) and data inconsistencies (identifying \"outliers\" like the misclassified \"Ferrari\" album type).\n\nCorrelation Analysis: Investigated the statistical link between an artist's global popularity and the success of their individual tracks.\n\nInsights Extraction: Identified top-performing artists (e.g., Taylor Swift) and tracks, while summarizing the distribution of release formats (Singles, Albums, and Compilations).",
+    "https://drive.google.com/drive/folders/1YDowbBuHLGtAdqH6YK4BnG-wsMI5CrNt?usp=sharing",
+    [
+      "I agree."
+    ]
   ]
 ]
