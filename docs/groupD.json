@@ -32,5 +32,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-25T05:16:31.371Z",
+    "(016) 王寶倫",
+    "411473016",
+    "歷年台灣金融指標趨勢探索分析",
+    "https://youtu.be/nNkU3LA7l3Q?si=v8-6A7cNZoJ2LAai",
+    "本專題使用政府資料開放平台之「歷年金融指標統計」資料，於 Google Colab 的 R 環境中進行探索性資料分析（EDA）。透過建立 Codebook、資料清洗與多維度視覺化，分析民國 79 年至 113 年間，台灣黃金市價、各國匯率及民間利率的長期變遷趨勢。",
+    "https://drive.google.com/drive/folders/1pUfX1uooCWlTbXMtiVH6grSIwU2omPrF?usp=sharing",
+    [
+      "I agree."
+    ]
   ]
 ]
