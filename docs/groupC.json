@@ -80,5 +80,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-26T14:36:57.401Z",
+    "(001) 吳庭維",
+    "411273001",
+    "Spotify 歌曲特徵與歌曲人氣之間的關係分析",
+    "https://youtu.be/Z4eRun6GLI8?si=h7vlQ5xAJm1YIimP",
+    "這份專題主要使用 Spotify 超過 17 萬筆歌曲資料，透過 R 語言進行資料讀取、清洗與探索性分析。我會從數據摘要開始，接著進行變數分布圖、散佈圖、相關係數矩陣，最後給出我的結論與發現。然後影片聲音比較小，已經重錄了好幾次還是沒辦法改善，所以麻煩要觀看的人聲音要調大聲一點不好意思",
+    "https://drive.google.com/drive/folders/1BI4eE3s7BT5wYu3Ic_sfKAEeW7JIOZnL?usp=sharing",
+    [
+      "I agree."
+    ]
   ]
 ]
