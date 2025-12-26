@@ -80,5 +80,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-26T06:56:37.677Z",
+    "(088) 羅于倫",
+    "411173088",
+    "Global Video Streaming Market Competition and User Behavior Analysis",
+    "https://youtu.be/TxZXqwZPfjY?si=ytmj0anNF_STNYaR",
+    "本研究旨在探討全球 78 家主要影音串流平台（包括 Netflix, Disney+, Amazon Prime 等）在 2020 至 2024 年間的發展態勢。透過 R 語言及其強大的數據處理套件（如 tidyverse 與 ggplot2），我們針對訂閱人數成長、每用戶平均收入（ARPU）以及客戶退訂率（Churn Rate）進行了深度分析。\n\n研究發現，雖然市場由少數全球龍頭佔據主要份額，但高參與度（High Engagement）與精確的定價策略是維持低退訂率的關鍵因素。此外，透過年齡層數據的視覺化，本研究亦揭示了不同平台在目標受眾定位上的顯著差異。本分析結果可為串流媒體業者在制定市場擴張與用戶留存策略時提供數據驅動之建議。",
+    "https://drive.google.com/drive/folders/16zeF-L_GvmWlNMW_603sWHV2s7LtB2FF?usp=drive_link",
+    [
+      "I agree."
+    ]
   ]
 ]
