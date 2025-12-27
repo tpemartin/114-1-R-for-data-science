@@ -152,5 +152,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-27T17:02:53.290Z",
+    "(060) 卓昌宏",
+    "411185060",
+    "Stroke Analysis",
+    "https://youtu.be/4wzFIjd3PYg",
+    "In my analysis of the Kaggle Stroke Prediction dataset, I identified age as the most critical predictor of stroke, noting that risk escalates sharply after age 50 and is strongly correlated with compounding factors like hypertension and heart disease. My model also highlights that clinical metrics—specifically high glucose levels above 200 mg/dL and elevated BMI—are the most effective indicators for distinguishing high-risk individuals from healthy ones. Ultimately, my findings suggest that while lifestyle factors like work type play a role, aggressive clinical screening for metabolic health in older populations is the most vital step for early prevention.",
+    "https://drive.google.com/drive/folders/1sOP0XriRKyHrOoImRZoAJ2Wsbl-fep44?usp=drive_link",
+    [
+      "I agree."
+    ]
   ]
 ]
