@@ -32,5 +32,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-27T11:29:23.085Z",
+    "(039) 洪慶民",
+    "411473039",
+    " 411473039 洪慶民 - Netflix 數據分析期末報告",
+    "https://youtu.be/3q7gjwjnQSI?si=jZqpgNYAvWPODnFO",
+    "專案主題：Netflix 影視內容數據分析\n\n專案簡介： 本專案使用 R 語言在 Google Colab 環境下，針對 Kaggle 的 Netflix 數據集進行探索性資料分析 (EDA)。\n\n主要發現：\n\n資料集顯示 Netflix 平台上的內容以電影為主 (約佔 70%)。\n\n內容跨度從 1925 年至 2024 年。\n\nProject Title: Netflix Content Data Analysis\n\nProject Summary: This project utilizes R within the Google Colab environment to perform Exploratory Data Analysis (EDA) on the Netflix dataset sourced from Kaggle.\n\nKey Findings:\n\nThe dataset indicates that the majority of content on Netflix consists of movies (approximately 70%).\n\nThe content release years span from 1925 to 2024.",
+    "https://drive.google.com/drive/folders/1LhgbzKyzAsMs8DDbXhwGwyUwTArIgd8O?usp=sharing",
+    [
+      "I agree."
+    ]
   ]
 ]
