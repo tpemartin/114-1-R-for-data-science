@@ -140,5 +140,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-28T05:50:07.748Z",
+    "(005) 王苡芊",
+    "411473005",
+    "Electric Vehicle Population Data",
+    "https://youtu.be/wfgknqzZVyU?si=qBRJmSdpbInfzX3N",
+    "Project Title: Analysis of Electric Vehicle Population in Washington State\n\nObjective: This project utilizes R to analyze the registration trends, brand distribution, and technological evolution of electric vehicles (EVs) in Washington State. The goal is to identify market leaders and assess the growth of sustainable transportation.\n\nKey Findings:\n\nMarket Dominance: Based on the visualization, Tesla maintains a significant lead in market share, followed by brands like Nissan and Chevrolet.\n\nTechnological Growth: A positive correlation exists between Model Year and Electric Range, indicating rapid advancements in battery efficiency over the last decade.\n\nVehicle Composition: Battery Electric Vehicles (BEVs) are the primary driver of market growth, outperforming Plug-in Hybrids (PHEVs) in total registrations.\n\nConclusion: The findings highlight an accelerating shift toward zero-emission transportation. The increasing diversity of brands and improving battery ranges suggest a maturing EV ecosystem supported by robust infrastructure and policy incentives.",
+    "https://drive.google.com/drive/folders/14co-tj_PYEZ3Y0ZasIuAdl56ybninyne?usp=share_link",
+    [
+      "I agree."
+    ]
   ]
 ]
