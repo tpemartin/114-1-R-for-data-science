@@ -1,0 +1,132 @@
+[
+  [
+    "Timestamp",
+    "Name",
+    "School Id",
+    "Title",
+    "Video link",
+    "Summary",
+    "Github final project link",
+    "Honor code declaration"
+  ],
+  [
+    "2025-12-26T06:47:06.327Z",
+    "(134) 匡顯國",
+    "411473134",
+    "Final project ",
+    "https://vimeo.com/1149400610/8b88021c33",
+    "本研究使用 R 语言对政府提供的 15 岁以上人口统计资料进行清理与分析，成功处理混合栏位与带逗号的数值格式。分析结果包含民國年換西元年，男女性别人口、识字与不识字人数统计，并完成城市名称由中文转为英文。",
+    "https://posit.cloud/content/11650638",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T10:27:55.707Z",
+    "(064) 傅思宸",
+    "411473064",
+    "Taylor Swift巡迴經濟效益分析",
+    "https://youtu.be/k2pHktG5HQc",
+    "分析Taylor Swift 自2009年至2018年間的五場主要巡迴演唱會數據（從Fearless Tour至Reputation Stadium Tour）。比較不同演唱會的票價、觀看人數演進。",
+    "https://drive.google.com/drive/folders/1asstqUQXDYBmxWWwPwuJiHzrESiOVa7q?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T11:30:52.898Z",
+    "(039) 洪慶民",
+    "411473039",
+    " 411473039 洪慶民 - Netflix 數據分析期末報告",
+    "https://youtu.be/3q7gjwjnQSI?si=jZqpgNYAvWPODnFO",
+    "專案主題：Netflix 影視內容數據分析\n\n專案簡介： 本專案使用 R 語言在 Google Colab 環境下，針對 Kaggle 的 Netflix 數據集進行探索性資料分析 (EDA)。\n\n主要發現：\n\n資料集顯示 Netflix 平台上的內容以電影為主 (約佔 70%)。\n\n內容跨度從 1925 年至 2024 年。\n\nProject Title: Netflix Content Data Analysis\n\nProject Summary: This project utilizes R within the Google Colab environment to perform Exploratory Data Analysis (EDA) on the Netflix dataset sourced from Kaggle.\n\nKey Findings:\n\nThe dataset indicates that the majority of content on Netflix consists of movies (approximately 70%).\n\nThe content release years span from 1925 to 2024.",
+    "https://drive.google.com/drive/folders/1LhgbzKyzAsMs8DDbXhwGwyUwTArIgd8O?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T11:32:21.827Z",
+    "(112) 姚玟卉",
+    "411473112",
+    "15歲以上教育程度─按區域別、性別分",
+    "https://youtu.be/PTXDW_QFVqA",
+    "📊 106年台灣教育程度 EDA 專案總結\n第一階段：化混亂為整齊（Data Taming）\n分析的第一步永遠是「資料清洗」。原始資料中，年份、地點與性別都擠在同一個欄位，且數字帶有逗點（文字格式）。\n\n關鍵技術：使用 separate() 拆解欄位，並利用 mutate() 與 str_remove_all() 將文字轉換為可運算的數值。\n\n成果：將「髒資料」轉化為符合 Tidy Data 原則的格式，讓後續分析變得極其簡單。\n\n第二階段：發現地理特徵（Regional Insights）\n我們首先觀察「誰的人口最多？」。\n\n關鍵發現：透過 ggplot2 的長條圖，我們直觀地看到新北市、台中市等直轄市的人口基數最大。\n\n分析思維：這階段幫助我們建立背景常識，但也讓我們意識到「人多不代表學歷比例高」，進而引發第二個問題。\n\n第三階段：從量變到質變（Ratio Analysis）\n為了公平比較各縣市的「學歷密度」，我們計算了研究生學歷佔總人口的百分比。\n\n關鍵技術：使用 mutate() 建立新指標，並用 fct_reorder() 進行排序。\n\n關鍵發現：新竹市等地區在「比例」上異軍突起，展現了與人口總量不同的知識密集度。\n\n第四階段：社會結構觀察（Gender Gap）\n我們深入探討了教育中的性別差異。\n\n關鍵技術：使用 position = \"dodge\" 讓男女數據併排顯示。\n\n觀察結果：在 106 年的數據中，男性獲得研究所學歷的比例普遍高於女性，這揭示了高階教育在性別分佈上的不均衡。\n\n第五階段：邁向自動化（Functional Programming）\n最後，我們將所有重複的步驟封裝成一個 R 函數。\n\n核心價值：這代表你不再只是做一次性的分析，而是建立了一個「工具」。未來不論是更換年份或學歷層級，都能一秒產出報表。",
+    "https://drive.google.com/drive/folders/1b6kQjNOT3NuUSFciP7KwxEodHd4yAHtI?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T18:25:11.039Z",
+    "(078) 袁靖喬",
+    "411473078",
+    "期末分析報告",
+    "https://youtu.be/d_GwD4FaD4o",
+    "1720-2016的地震數據分析地震規模與傷亡人數及房屋倒塌數量的關係",
+    "https://drive.google.com/drive/folders/1u02WkCnJUbQwC2OXeqBqcNu4pVcD5P-A?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T19:16:09.843Z",
+    "(072) 李宥安",
+    "411473072",
+    "107-113年台灣替代役供需趨勢分析",
+    "https://youtu.be/l1efX49LGfA",
+    "1. 數據品質與結構 (Data Integrity)\n高品質資料：除了「備註」欄位外，幾乎沒有缺失值 (NA)。每一筆「年度 + 期別」都是獨一無二的，這讓我們分析的結論非常可靠。\n\n變數轉換：我們克服了 CSV 檔案中「中文欄位重複」與「千分比符號」的困難，成功將資料轉化為可計算的英文變數（如 apply_total, admit_total）。\n\n2. 關鍵趨勢：108 年後的噴射成長 (The Applicant Surge)\n從 107-108 年的數百人規模，到 110 年後的數千人甚至破萬，數據顯示替代役的申請熱度出現了轉折點。\n\n透過「堆疊圖」或「比較長條圖」，我們鎖定了主因:「一般資格 (General)」申請者的湧入。\n\n3. 供需矛盾與競爭壓力 (Supply-Demand Gap)\n位置不夠了：雖然申請人數 (Applicants) 大幅增加，但官方提供的名額 (Quota) 成長速度較慢。\n\n錄取率跳水：這導致了綠色的錄取率曲線在 110 年後呈現明顯的下滑趨勢。現在服替代役已不再是「申請就有」，而是需要抽籤或競爭的。\n\n4. 政策與彈性 (Policy Insights)\n身分優勢：分析顯示「專長資格」的錄取率遠比「一般資格」穩定。\n\n資格轉換：透過備註與異常值檢查，我們發現了政府的彈性機制（專長不符者可轉列一般資格），這解釋了為何有時錄取人數會超過該類別的報名人數。",
+    "https://drive.google.com/drive/folders/1QnQi-SmiOk29U00dxOnSiPjs_qsQldVp?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T01:28:54.335Z",
+    "(021) 王閔玄",
+    "411273021",
+    "上市公司召開股東常 (臨時) 會日期、地點及採用電子投票情形等資料彙總表",
+    "https://youtu.be/JAy5iveF0u4",
+    "總結來說，透過這次 R 語言的資料分析，我們證實了 2025 年台灣股東會依然高度集中在 5、6 月份舉辦，並且以台北市為最主要的舉辦地點。在股務代理方面，則是由中國信託與元大證券等大型機構佔據市場主導地位。以上就是我的分析報告，謝謝大家。",
+    "https://drive.google.com/drive/folders/1wkANY3m4BSt1BwfWI1gOjfUn4kkjGu-w?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T11:13:57.949Z",
+    "(028) 廖述同",
+    "411473028",
+    "期末報告",
+    "https://youtu.be/HgoLcGVxCTI",
+    "本專題使用政府資料開放平台之「桃園市公共自行車啟用站位數」資料，於 Google Colab 的 R 環境中進行探索性資料分析（EDA）。透過建立 Codebook、資料清洗與多維度視覺化，分析桃園市公共自行車的啟用狀況。 ",
+    "https://colab.research.google.com/drive/1VoIvNWbeQAanle6-9S1ybHH_9xshJ_kC?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T11:46:16.146Z",
+    "(008) 鍾竺岑",
+    "411473008",
+    "1990-2023 台灣金融市場壓力與金價變動之量化分析",
+    "https://youtu.be/CNL4ZB5pmBU",
+    "透過 R 語言深入剖析台灣過去三十年（1990-2023）的經濟變遷，整合匯率、利率、大宗商品三大面向，系統性地探討台灣金融體系的穩定性。影片分為七大階段，從基礎的資料清洗、外匯溢價與利率脫鉤分析出發，進而建立高解釋力的飾金價格預測模型。",
+    "https://drive.google.com/drive/folders/1oPdy0saGJLsIGFvQfeWiSJFSs3ez9ZOJ?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T11:47:21.959Z",
+    "(047) 謝坤恩",
+    "411273047",
+    "桃園市四大觀光夜市營運資訊與特色 Final Project",
+    "https://youtu.be/YG87eKrG8Jc",
+    "涵蓋了桃園市四個主要行政區（中壢、桃園、八德、龍潭）的列管觀光夜市，包含其規模、營業時間及特色介紹 。\n資料來源為政府資料開放平臺。\n根據 Codebook 定義，本資料集主要包含夜市的行政區、名稱、經營主體（公/民營）、營業週期、地點、管理資訊及規模指標（攤位數）等資訊 。\n整體而言，各夜市透過不同的營業週期與空間規劃，滿足多樣化的消費需求。",
+    "https://drive.google.com/drive/folders/1mOyShpRL6oLHgC9spWuDbD639MVUsZ0T?usp=sharing",
+    [
+      "I agree."
+    ]
+  ]
+]

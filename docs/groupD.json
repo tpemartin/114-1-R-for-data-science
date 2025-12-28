@@ -1,0 +1,192 @@
+[
+  [
+    "Timestamp",
+    "Name",
+    "School Id",
+    "Title",
+    "Video link",
+    "Summary",
+    "Github final project link",
+    "Honor code declaration"
+  ],
+  [
+    "2025-12-24T09:28:51.891Z",
+    "(109) 邱宇婕",
+    "411473109",
+    "新竹縣國民中學學區資料分析",
+    "https://youtu.be/BQTDjeQpeTs",
+    "本專題使用政府開放資料平台之「新竹縣各鄉鎮市國民中學學區」資料，於 Google Colab 的 R 環境中進行探索性資料分析。透過建立 Codebook、分組統計與視覺化，分析各鄉鎮市國中分布及學區描述複雜度。另結合 AI R Learning Mentor 與 Identity 概念，展示 AI 輔助學習與資料分析整合之可能性。",
+    "https://drive.google.com/drive/folders/1_surP1OJBrcbqS9ZTZBfMy9FHqG5xaQq?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-24T11:59:01.685Z",
+    "(116) 李翊誠",
+    "411273116",
+    "上櫃股票行情 ",
+    "https://youtu.be/71T-J12JrIs",
+    "「這是一份股市數據翻譯機。它把複雜的上櫃交易資料整理好，並自動算出哪支股票現在最熱門，哪支風險最高，讓我們一眼就能看懂市場趨勢。",
+    "https://docs.google.com/document/d/1VgvVb6lVpYw080B94kiXmREQc1sLHfn_oU6ZY9_Wjvg/edit?usp=share_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-25T05:16:31.371Z",
+    "(016) 王寶倫",
+    "411473016",
+    "歷年台灣金融指標趨勢探索分析",
+    "https://youtu.be/nNkU3LA7l3Q?si=v8-6A7cNZoJ2LAai",
+    "本專題使用政府資料開放平台之「歷年金融指標統計」資料，於 Google Colab 的 R 環境中進行探索性資料分析（EDA）。透過建立 Codebook、資料清洗與多維度視覺化，分析民國 79 年至 113 年間，台灣黃金市價、各國匯率及民間利率的長期變遷趨勢。",
+    "https://drive.google.com/drive/folders/1pUfX1uooCWlTbXMtiVH6grSIwU2omPrF?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-25T08:22:16.940Z",
+    "(054) 李若綺",
+    "411282054",
+    "Decoding the Sound of Success: A Spotify Global EDA",
+    "https://youtu.be/Tk6a0C4Zfr8",
+    "Project Overview This project explores a dataset of over 8,500 Spotify tracks to understand the relationship between artist influence and song popularity. By merging disparate datasets containing track metadata and artist metrics, the analysis identifies key trends in the modern music landscape, specifically focusing on the \"streaming era\" distribution of singles versus albums.\n\nKey Objectives\n\nData Integration: Combined multiple CSV sources using track_id as a unique identifier to create a comprehensive analysis master file.\n\nData Health Assessment: Performed a systematic check for missing values (NAs) and data inconsistencies (identifying \"outliers\" like the misclassified \"Ferrari\" album type).\n\nCorrelation Analysis: Investigated the statistical link between an artist's global popularity and the success of their individual tracks.\n\nInsights Extraction: Identified top-performing artists (e.g., Taylor Swift) and tracks, while summarizing the distribution of release formats (Singles, Albums, and Compilations).",
+    "https://drive.google.com/drive/folders/1YDowbBuHLGtAdqH6YK4BnG-wsMI5CrNt?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-25T15:35:58.940Z",
+    "(132) 張桂薰",
+    "411473132",
+    "Final Project",
+    "https://youtu.be/jK2PsPbe3LM",
+    "透过这次练习，我学会使用 R 语言读取并整理政府统计资料，并了解资料清理在数据分析中的重要性。过程中发现，若未先确认资料结构，容易产生重复计算或错误结果，因此采用最简单且稳妥的方法来取得研究院含博士人数。整体而言，这次作业让我更熟悉 R 的基本操作，也提升了我对资料分析流程的理解。",
+    "https://posit.cloud/content/11650597",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-26T06:56:37.677Z",
+    "(088) 羅于倫",
+    "411173088",
+    "Global Video Streaming Market Competition and User Behavior Analysis",
+    "https://youtu.be/TxZXqwZPfjY?si=ytmj0anNF_STNYaR",
+    "本研究旨在探討全球 78 家主要影音串流平台（包括 Netflix, Disney+, Amazon Prime 等）在 2020 至 2024 年間的發展態勢。透過 R 語言及其強大的數據處理套件（如 tidyverse 與 ggplot2），我們針對訂閱人數成長、每用戶平均收入（ARPU）以及客戶退訂率（Churn Rate）進行了深度分析。\n\n研究發現，雖然市場由少數全球龍頭佔據主要份額，但高參與度（High Engagement）與精確的定價策略是維持低退訂率的關鍵因素。此外，透過年齡層數據的視覺化，本研究亦揭示了不同平台在目標受眾定位上的顯著差異。本分析結果可為串流媒體業者在制定市場擴張與用戶留存策略時提供數據驅動之建議。",
+    "https://drive.google.com/drive/folders/16zeF-L_GvmWlNMW_603sWHV2s7LtB2FF?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-26T07:21:54.815Z",
+    "(044) 黃碩園",
+    "411373044",
+    "411373044-final_project",
+    "https://youtu.be/gR9DCGoCIcM",
+    "總結來說，透過這次的分析流程，我們可以清楚看到，\n健保申報量最高的項目，主要集中在門診診察費與藥事服務費，也就是我們日常最常接觸到的基層醫療服務。\n\n這也顯示，基層醫療院所與藥局在健保制度中，扮演非常重要的角色。",
+    "https://drive.google.com/drive/u/3/folders/1si452QiDxNIDBn583IKS2mFSpEUKCjiX",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-26T12:44:26.059Z",
+    "(130) 鄧天翼",
+    "411473130",
+    "Fianl Project 2025 R code — Anime",
+    "https://youtu.be/PTjUR3F1g7s",
+    "我進行的主題是當我想要看動漫的時候卻發現有太多選項給我選擇了，所以我寫了程序來讓我能夠知道我想看的動漫類型。",
+    "https://drive.google.com/drive/folders/17wchPy2VwEz61vWYU6AoXA_3G2mFUD5J?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-26T13:52:29.872Z",
+    "(027) 王念筠",
+    "411373027",
+    "資料科學分析 臺北市近年金融市場",
+    "https://youtu.be/pGfv8McjRhc",
+    "數據告訴我們，過去 30 年金價在漲，匯率在波動，透過幾行簡潔的 R 程式碼清晰地呈現在眼前",
+    "https://drive.google.com/drive/folders/1VssM9ttr70FOaFLETOD1LaWLUO9wA8PR?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T07:34:42.556Z",
+    "(135) 張素美",
+    "411473135",
+    "Final project",
+    "https://vimeo.com/1149575520?fl=pl&fe=sh",
+    "在這次的分析中，我通過這份包含15歲以上人口教育程度的資料，對於台灣不同區域、不同性別的教育情況有了更深入的了解。這份資料提供了大量的統計信息，涵蓋了從識字率到大學、研究院等教育程度的各項指標。這些數據不僅有助於理解各區域間的教育差異，還能揭示男女在教育水平上的不同。\n\n首先，資料中提供的識字率與不識字人數讓我對台灣人口的基礎教育情況有了清晰的認識。從中可以看出，大部分地區的識字率都相對較高，但仍有一定數量的人口處於不識字狀況，這為未來的教育資源分配和提升識字率提供了重要參考。\n\n其次，對於教育程度的區分，如大學、研究院等，這些數據清楚顯示了台灣各地區人民的高等教育情況。特別是男女在高等教育中的比例，幫助我們了解性別差異在教育機會上的影響。例如，部分地區女性在大學教育中占據的比例高於男性，這反映了當地女性教育重視度的提升。\n\n除了教育層次的分析，資料中的各區域人口數據也讓我看到了不同區域間教育資源的不均衡，尤其是一些較偏遠或經濟較弱的地區，教育程度較低的情況較為突出。這樣的數據對於政策制定者而言，提供了具體的指導意見，讓他們能針對不同地區進行更加精準的教育資源配置和改進措施。\n\n總的來說，這份資料讓我對台灣的教育現狀有了更全面的理解。從教育水平的性別差異到區域性的不平等問題，都能夠為我們提供有價值的洞見。通過這些數據分析，我們可以更加清楚地看到教育資源的分布、性別的影響、以及各地區教育的發展趨勢。這對於未來的教育政策調整、資源配置，以及提升教育公平性等方面，都具有十分重要的意義。",
+    "https://posit.cloud/content/11650603",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T12:12:50.774Z",
+    "(124) 溫家樣",
+    "411473124",
+    "Finding steam video games from datasets",
+    "https://youtu.be/aeFKf2VpmJQ",
+    "Using Kaggle datasets to find a specific video games. ",
+    "https://drive.google.com/drive/folders/1EznrzvjP81etrO0BzfEl9OTMJJh8N-Nb?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T17:02:53.290Z",
+    "(060) 卓昌宏",
+    "411185060",
+    "Stroke Analysis",
+    "https://youtu.be/4wzFIjd3PYg",
+    "In my analysis of the Kaggle Stroke Prediction dataset, I identified age as the most critical predictor of stroke, noting that risk escalates sharply after age 50 and is strongly correlated with compounding factors like hypertension and heart disease. My model also highlights that clinical metrics—specifically high glucose levels above 200 mg/dL and elevated BMI—are the most effective indicators for distinguishing high-risk individuals from healthy ones. Ultimately, my findings suggest that while lifestyle factors like work type play a role, aggressive clinical screening for metabolic health in older populations is the most vital step for early prevention.",
+    "https://drive.google.com/drive/folders/1sOP0XriRKyHrOoImRZoAJ2Wsbl-fep44?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T01:52:09.217Z",
+    "(075) 陳品淳",
+    "411373075",
+    "程式設計期末報告",
+    "https://youtu.be/_pTf3mN6Ro0?si=Xwh68BK9_vmdjx_s",
+    "推廣教育訓練中心結訓班性別比例分析",
+    "https://drive.google.com/drive/folders/1QGDBVA2OEfR1cYhw2zqolAjv26SCzxQC",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T01:52:50.660Z",
+    "(025) 鄭宇媃",
+    "411473025",
+    "台灣能源結構75年來的轉變",
+    "https://youtu.be/13M0lStkDb8",
+    "處理台電 75 年的歷史數據，透過數據轉置、5 年移動平均平滑化以及 HHI 集中度指標，將數字轉化為可視化的趨勢，深入探討台灣能源結構的演變脈絡。",
+    "https://drive.google.com/drive/folders/1PpMHhRNIl-lpWm3jz162O6209vMOzg7R?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T09:50:38.322Z",
+    "(020) 陳弘恩",
+    "411373020",
+    "年齡與性別是否會影響收入",
+    "https://youtu.be/9gwtg_iEKLM",
+    "本專題分析年齡與性別對收入的影響，使用 Adult Census Income 資料集。\n透過資料清理與視覺化，我們發現年齡越大，高收入機率越高，男性的高收入比例明顯高於女性。\n使用邏輯迴歸模型量化，結果顯示年齡與性別皆對高收入機率有顯著影響，男性高收入機率約為女性 3.5 倍。\n本專題展示了 R 語言在資料處理、圖表分析與迴歸建模的應用流程。",
+    "https://drive.google.com/drive/folders/1Tg89LaB2QrHjhFZmerMK5shKSmQi-Fqw?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ]
+]

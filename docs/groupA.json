@@ -1,0 +1,156 @@
+[
+  [
+    "Timestamp",
+    "Name",
+    "School Id",
+    "Title",
+    "Video link",
+    "Summary",
+    "Github final project link",
+    "Honor code declaration"
+  ],
+  [
+    "2025-12-24T03:56:19.372Z",
+    "(138) 顏勇升",
+    "411473138",
+    "乌克兰冲突事件数据分析（2022-2025 年）",
+    "https://youtu.be/zdCyI7o3vnU?si=yBshSOIlGrJBSQmX",
+    "乌克兰冲突事件数据分析運用",
+    "https://drive.google.com/drive/folders/1zNLuViMspjSus_gF_wXTYgDWPRYnIE1W?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-26T03:02:48.131Z",
+    "(099) ALFRED ANTONIO",
+    "411287099",
+    "Students Social Media Addiction - Programming in Data Science IA Final Project",
+    "https://youtu.be/XQqM_0_X9mI?si=VsWGl1sKQFt0dYla",
+    "I showed how to perform data analysis on a dataset regarding a survey done towards students around the world about how much they use social media in everyday life. I used Google Colab and R language to perform data analysis such as data cleaning, data summarization and visualization to come up with the conclusion that among students, high school students are the most susceptible towards social media addiction as they spend the most time in a day to browse social media, hence feeling that their academic performance and mental health are worsened.",
+    "https://drive.google.com/drive/folders/1mrYchoYFf7yyozS031C6CTb1hLGGH_OO",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-26T13:17:21.036Z",
+    "(025) 葉子晴",
+    "411373025",
+    "各地機場、港口入出境人數統計資料",
+    "https://youtu.be/3d96EzZIS08",
+    "總結各地機場、港口入出境人數最多的前十名，並且排序各月出入境人數，尋找最夯的月份",
+    "https://drive.google.com/drive/folders/1jqPD3-vjMHnMf6AmIwFrUKSgMwMMYZTa?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T16:57:51.366Z",
+    "(105) 陳證宇",
+    "411373105",
+    "國民年金基金永續投資趨勢分析",
+    "https://youtu.be/_7QKCkM-LEQ?si=IR5kQE7I-f8dwlp4",
+    "透過這 6 分鐘的分析，我們不只學到了如何用程式碼解決中文亂碼，更看見了國家基金的轉型。\n數據視覺化的目的，是為了讓政府的運作更加透明。當我們能親手繪製出這條「永續曲線」時，我們對社會保險的未來就多了一份掌握。\n未來的研究方向，我們可以嘗試將「投資比例」與「基金收益率」進行交叉對比，看看永續投資是否真的能像學術界所說的，在降低風險的同時，也帶來穩定的長期回報。",
+    "https://drive.google.com/drive/folders/11RdbTg-2RHPfjASp39wanBVNmXt4wDug?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T17:49:47.461Z",
+    "(024) 林世芳",
+    "411373024",
+    "411373204 林世芳",
+    "https://youtu.be/YqfBqKAGwgg",
+    "以「112學年臺南市國民小學原住民學生數-校族群」為分析資料，統整code book跟繪畫圖形",
+    "https://drive.google.com/drive/folders/112nLC6Hky7Nx5kNBFD29j1SaUrGmbJCI",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T19:40:17.542Z",
+    "(087) 周成威",
+    "411473087",
+    "spotify 統計數據的基本資料分析",
+    "https://youtu.be/bNjSNTfJe80",
+    "本次研究是根據spotify的統計數據去了解哪些特徵與歌曲知名度有關，那最終得到的結論是歌曲熱門程度多為40-70中等程度，但同時也有相當多數的歌知名度為0；而標籤有Explicit(成人)，事實上此標籤的定義個人認為算偏易，暴力也算，因此多半排行榜常見的歌皆會看到，但其實數量也沒那麼多，且對知名度影響差異不大，最後是歌手知名度越高，他的歌知名度也越高，這部分也很好理解。",
+    "https://drive.google.com/drive/u/1/folders/1e0RARkPMBE1qDr8PJcC7sE95PeHQpwFW",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T22:43:24.209Z",
+    "(055) 劉思妤",
+    "411473055",
+    "嬰兒出生數和教育程度的關係",
+    "https://youtu.be/3lPDlhJmkzE?si=7l-T8yzItMWYYtOh",
+    "本研究以 111 年出生登記資料為主題，探討生母教育程度、年齡分佈對嬰兒出生數的影響，並進一步比較六大直轄市之區域差異。結果顯示，大學學歷之生母為現行生育主力，且教育程度與生育年齡呈現高度正相關：隨教育程度提升，生育高峰顯著向 30–34 歲及 35–39 歲後移，反映出「晚婚晚育」與高學歷化之社會現況。\n區域比較發現，臺北市的高學歷及高齡生育現象最為突出，而桃園與臺中則保有相對較高的年輕生育族群參與。研究建議包括因應高學歷族群特性優化育兒友善環境、針對高齡生母強化醫療支援，以及縮減區域間的生育資源差距，旨在提升生育環境的包容性與成效，推動人口結構的永續發展。",
+    "https://drive.google.com/drive/folders/1BNlck4TC7CvzQFiGhNr4xJvtyQeaFkHM?usp=share_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T05:53:45.635Z",
+    "(416) 吳家弘",
+    "410874416",
+    "final project -107～113年役男申請服替代役人數趨勢與供需分析",
+    "https://youtu.be/r0yXeM57HqE",
+    "研究替代役兵役人數與近年相關成長",
+    "https://drive.google.com/drive/folders/1IE-RRdrhGRShQ72opKz3YrkwGXcH71ZR?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T07:46:55.597Z",
+    "(114) 張芷綺",
+    "411473114",
+    "醫療服務給付項目及支付標準",
+    "https://youtu.be/SxzzuykNxTM?si=PA1caP9CVT5xzxJ2",
+    "給付健保支付點數的前十名還有給付類型",
+    "https://drive.google.com/drive/folders/1r-DPMaloSIb6FvrNX60SCnGkHerM15k_",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T08:11:34.408Z",
+    "(067) 鄭暐曦",
+    "411473067",
+    "學生學習表現的關鍵驅動因素分析",
+    "https://youtu.be/7219ELiOaS4",
+    "該資料集包含學生成績記錄，捕捉了影響考試成績的關鍵學術和個人因素。它幫助研究人員和機器學習從業者探索學習時間、父母教育程度、課外活動和社會經濟狀況等屬性如何影響學生的成績。我們透過 R 語言對一萬名學生的行為數據進行深入探討，目的是找出哪些因素最能有效提升學生的表現指數。本報告將依序從基本概況、相關性檢定、視覺化趨勢，最後到預測模型的建立來進行說明。」",
+    "https://drive.google.com/drive/folders/1nlaexosTXaxhf_9sr8iw57j-LkXYhJ8o?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T11:54:48.716Z",
+    "(001) 張鐦仁",
+    "411473001",
+    "鐵達尼號生存預測",
+    "https://youtu.be/8jnSVocGVPE",
+    "分析鐵達尼號生存者的性別、社會階級、年齡，以助預測生還機率。",
+    "https://drive.google.com/drive/folders/1QA2qkNqvJ3Vvc1h5yOYtfBMJKhiFyd1h?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T12:35:03.753Z",
+    "(046) 田文心",
+    "411473046",
+    "411473046 田文心 民眾於六都及各縣市的信用卡消費行為分析",
+    "https://youtu.be/puBmYbXawGE?si=WGrTGbFWfnYz9TmY",
+    "民眾於六都及各縣市的信用卡消費行為分析",
+    "https://drive.google.com/drive/folders/1OVccDW9pKJqhTwKraKuQqj0bBnmCZq0s?usp=sharing",
+    [
+      "I agree."
+    ]
+  ]
+]

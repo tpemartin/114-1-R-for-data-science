@@ -1,0 +1,168 @@
+[
+  [
+    "Timestamp",
+    "Name",
+    "School Id",
+    "Title",
+    "Video link",
+    "Summary",
+    "Github final project link",
+    "Honor code declaration"
+  ],
+  [
+    "2025-12-24T05:02:26.127Z",
+    "(080) 王頤",
+    "411273080",
+    "期末專題 411273080 王頤 經濟三",
+    "https://youtu.be/sFN5LF33t-Q",
+    "用R語言分析民國79年後的台北金融市場",
+    "https://drive.google.com/drive/folders/1tZJSkdS5ysn-j9PRmBcUUpE4xo6tp6K-?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-25T10:16:29.532Z",
+    "(122) 黃美森",
+    "411473122",
+    "Understanding Student Wellbeing from Lifestyle and Academic Factors",
+    "https://youtu.be/eOlQSC4nk3k",
+    "Overall, the analysis shows that lifestyle and academic factors are closely related to student wellbeing. Students generally experience moderate academic pressure and study hours, while dietary habits and sleep patterns show noticeable associations with academic performance and satisfaction. Healthier diets are linked to slightly higher CGPA, higher academic pressure is associated with longer study hours, and balanced sleep duration around 5-8 hours is related to better academic outcomes and stable study satisfaction. Although this exploratory analysis does not prove causation, it provides a strong starting point for understanding how everyday lifestyle and academic demands may influence student wellbeing.",
+    "https://drive.google.com/drive/folders/1igYtYjhqyDeI52TVhlzWCKG7tgV5FGOk?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-25T15:38:09.913Z",
+    "(136) 張華愛",
+    "411373136",
+    "Final Project 經濟二 411373136 張華愛",
+    "https://youtu.be/V3XBWkIEuEQ?si=kHjTrR5aM0LVKI0U",
+    "透過本次作業，我實際運用 R 語言對官方統計資料進行整理與分析，對資料分析的流程有更深入的理解。在處理資料的過程中，我發現原始資料往往需要先進行前處理，例如年度轉換與人口數格式整理，才能進行正確的統計分析。透過加總識字與不識字人口，以及比較不同地區的大學程度人口數，使我能以數據驗證對教育分布的既有認知。本次實作不僅提升了我對 R 語言的熟悉度，也讓我體會到資料整理在分析中的重要性。",
+    "https://posit.cloud/content/11650618",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-26T09:24:32.175Z",
+    "(094) 賴柏元",
+    "411473094",
+    "An Exploratory Analysis of Students’ Study Habits and Academic Performance",
+    "https://youtu.be/UPtSHcTTGtY",
+    "This project uses exploratory data analysis to examine the relationship between students’ study hours, gender, and GPA.By applying summary statistics and visualizations such as scatter plots, bar charts, and pie charts, the analysis provides insights into patterns of academic performance and data composition.",
+    "https://drive.google.com/drive/folders/1snBja7pBMoqd47kMOW1cutcYjJ6rLiP5?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T05:08:24.661Z",
+    "(022) 林于倫",
+    "411473022",
+    "Final project 經濟一 林于倫  411473022",
+    "https://youtu.be/bsE5Qx1qgjY",
+    "分析桃園市公益彩券盈餘分配辦理社會福利事業執行情形-每年統計",
+    "https://drive.google.com/file/d/1_FisBuq2Oi0bRKqPGgK1fMHZLTplhKWa/view?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T13:59:05.370Z",
+    "(056) 張舒涵",
+    "411473056",
+    "Netflix Streaming Platform Trends Analysis",
+    "https://youtu.be/i8gh7WVOOos",
+    "In this video i used r programming to analyze Netflix content trends, focusing on answering three main research questions: \n1. What is the distribution of content types on Netflix?\n2. Does Netflix prioritize new releases or older classics?\n3. What is the average movie duration, and is it getting shorter?\nMy analysis also suggests three things: \n1. Netflix should produce more TV Shows to increase user retention. \n2. They should continue optimizing for shorter movie lengths. \n3. Adding more classic titles could help reach different age demographics.",
+    "https://docs.google.com/document/d/1s0eYq7ykiPJEOZx1eBADC8lCgrJFmadD/edit?usp=sharing&ouid=109583089909589637558&rtpof=true&sd=true",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-27T17:18:19.131Z",
+    "(009) 陳郁翔",
+    "411473009",
+    "Netflix 影視趨勢分析",
+    "https://youtu.be/3qf8feEph24",
+    "探討在串流媒體盛行的時代，內容產出的分布情況",
+    "https://drive.google.com/drive/folders/1YQu0xbnbH-J0neMhdKXC0env8TXi43xx?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T06:15:00.187Z",
+    "(071) 李嘉程",
+    "411473071",
+    "Annual Statistics of the Number of Sexual Assault Victims in Taoyuan City",
+    "https://youtu.be/yLtk2hrCKpk",
+    "Data Overview: This analysis examines annual statistics for sexual assault victims in Taoyuan City, sourced from the Ministry of the Interior.\n\nVariable Integrity: The dataset tracks three primary numeric variables: male victims, female victims, and the total number of victims. A data quality check confirmed that the total column consistently represents the sum of male and female records.\n\nGender Distribution: Exploratory analysis reveals a significant gender disparity in reported cases. In the sample data provided, female victims represent approximately 89% of the total cases, with male victims accounting for the remaining 11%.\n\nReporting Trends: The visualizations indicate that while the number of male victims remains relatively stable year-over-year, the number of female victims drives the overall fluctuations in the total count.",
+    "https://drive.google.com/drive/u/0/folders/1Cgg53Vccxo1PDwokAK5lbjubBUYo4OiI",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T07:47:51.684Z",
+    "(022) 陳旻榆",
+    "411373022",
+    "空氣品質相關性分析",
+    "https://youtu.be/-FPx-svyUws",
+    "發現共生關係： 透過數據相關性分析，我們發現二氧化氮 (NO2) 與一氧化碳 (CO) 總是同步升降，這有力地證明了交通廢氣是城市主要的污染來源。\n\n鎖定污染源頭： 相關性熱圖讓我們能一眼區分污染來自「汽機車燃燒」還是「工廠排放」，這比單看 AQI 數值更能找出問題核心。\n\n科學決策依據： 數據分析將抽象的空氣變成直觀的圖表，幫助我們理解污染物的連鎖反應，為精準改善環境提供科學根據。",
+    "https://drive.google.com/drive/folders/1ZaRbio5zWrq7e2xu8Nkn4L1iwj5ZZlXi?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T09:32:47.624Z",
+    "(019) 郭宥渝",
+    "411473019",
+    "新制勞工退休基金永續投資比例（百分比)",
+    "https://youtu.be/90zI2VS08fM",
+    "這份數據記錄了「新制勞工退休基金」投入永續投資（ESG）的比例變化。\n案件核心在於追蹤勞動基金運用局如何落實責任投資。數據顯示，該基金的永續投資比例從 2016 年起約 93% 穩步上升，至今已長期維持在 98% 以上 的高水位。這反映了台灣公共養老金在資產配置上，已高度轉向符合環境、社會與公司治理標準的標的，旨在兼顧長期穩定的投資收益與社會永續價值。",
+    "https://drive.google.com/drive/folders/1N0gQqPcw5sS8h4pZ9pYgp2wJiPN-WkR6?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T09:44:01.868Z",
+    "(012) 蘇筱恩",
+    "411473012",
+    "108年離婚人數按性別及原屬國籍（地區）分",
+    "https://youtu.be/YUnHQ0uCCTs?si=9mW4vr0hm6F0RwGg",
+    "本專案分析台灣 108 年六都離婚人口，採用 R 語言進行資料清理與視覺化",
+    "https://drive.google.com/drive/folders/1V4KfqTnJtFs9wvPtt0qhx6rnqfyTpeM0",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T11:42:31.033Z",
+    "(106) 陳尚恩",
+    "411473106",
+    "程式設計期末報告 經濟一411473106 陳尚恩 台灣107年結婚對數按男女雙方年齡分(按發生)",
+    "https://youtu.be/IoD88NndywQ",
+    "分析台灣107年結婚對數按男女雙方年齡分(按發生)，主要分析各縣市的結婚對數排行，桃園市各區的結婚對數排行，桃園各區姊弟戀的結婚對數，全台各縣市未滿18歲結婚的對數，和男女適婚年齡排行榜。",
+    "https://drive.google.com/drive/folders/1xRqrHKUhoLENisCA0JuZFYt0YkmlgNKF?usp=sharing",
+    [
+      "I agree."
+    ]
+  ],
+  [
+    "2025-12-28T11:52:22.151Z",
+    "(062) 覃彥瑜",
+    "411473062",
+    "Final Project-台南市跨國婚姻分析",
+    "https://vimeo.com/1149833781?share=copy&fl=sv&fe=ci",
+    "In conclusion, this project demonstrates a complete data analysis workflow using Python.\nWe began by loading and inspecting the raw CSV data to understand its structure.\nNext, we cleaned the data by correcting column names and removing summary rows to ensure accuracy.\n\nWe then analyzed cross-national marriage data by nationality and district, calculated key indicators such as the number and percentage of cross-national marriages, and identified districts with the highest ratios.\nFinally, we exported the results into CSV and Excel files, creating a clear and practical report for further analysis and presentation.\n\nOverall, this program shows how Python can be effectively used to transform raw data into meaningful insights and well-organized analytical reports.",
+    "https://drive.google.com/drive/folders/1NIKwC1tf6zDGHG-qQuc2qMRzizC3qI0k?usp=drive_link",
+    [
+      "I agree."
+    ]
+  ]
+]
