@@ -176,5 +176,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-28T09:50:38.322Z",
+    "(020) 陳弘恩",
+    "411373020",
+    "年齡與性別是否會影響收入",
+    "https://youtu.be/9gwtg_iEKLM",
+    "本專題分析年齡與性別對收入的影響，使用 Adult Census Income 資料集。\n透過資料清理與視覺化，我們發現年齡越大，高收入機率越高，男性的高收入比例明顯高於女性。\n使用邏輯迴歸模型量化，結果顯示年齡與性別皆對高收入機率有顯著影響，男性高收入機率約為女性 3.5 倍。\n本專題展示了 R 語言在資料處理、圖表分析與迴歸建模的應用流程。",
+    "https://drive.google.com/drive/folders/1Tg89LaB2QrHjhFZmerMK5shKSmQi-Fqw?usp=drive_link",
+    [
+      "I agree."
+    ]
   ]
 ]
