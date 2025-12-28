@@ -152,5 +152,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-28T11:52:22.151Z",
+    "(062) 覃彥瑜",
+    "411473062",
+    "Final Project-台南市跨國婚姻分析",
+    "https://vimeo.com/1149833781?share=copy&fl=sv&fe=ci",
+    "In conclusion, this project demonstrates a complete data analysis workflow using Python.\nWe began by loading and inspecting the raw CSV data to understand its structure.\nNext, we cleaned the data by correcting column names and removing summary rows to ensure accuracy.\n\nWe then analyzed cross-national marriage data by nationality and district, calculated key indicators such as the number and percentage of cross-national marriages, and identified districts with the highest ratios.\nFinally, we exported the results into CSV and Excel files, creating a clear and practical report for further analysis and presentation.\n\nOverall, this program shows how Python can be effectively used to transform raw data into meaningful insights and well-organized analytical reports.",
+    "https://drive.google.com/drive/folders/1NIKwC1tf6zDGHG-qQuc2qMRzizC3qI0k?usp=drive_link",
+    [
+      "I agree."
+    ]
   ]
 ]
