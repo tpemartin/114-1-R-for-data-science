@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>評估表單查詢系統</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-indigo-100 min-h-screen flex items-center justify-center p-4">
+
+    <div class="bg-white rounded-xl shadow-2xl w-full max-w-lg overflow-hidden transition-all duration-300 hover:shadow-3xl">
+        <!-- Header -->
+        <div class="bg-indigo-600 p-6 text-center">
+            <h1 class="text-2xl font-bold text-white tracking-wide">
+                <i class="fas fa-clipboard-list mr-2"></i>評估表單查詢
+            </h1>
+            <p class="text-indigo-200 mt-2 text-sm">請選擇姓名以取得評估連結</p>
+        </div>
+
+        <!-- Content -->
+        <div class="p-8 space-y-6">
+            
+            <!-- Selector Container -->
+            <div class="relative">
+                <label for="nameSelect" class="block text-sm font-medium text-gray-700 mb-2">
+                    選擇人員姓名
+                </label>
+                <div class="relative">
+                    <select id="nameSelect" class="block w-full pl-4 pr-10 py-3 text-base border-gray-300 focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm rounded-lg border bg-gray-50 hover:bg-white transition-colors cursor-pointer appearance-none shadow-sm">
+                        <option value="">-- 請選擇 --</option>
+                        <!-- Options will be populated by JS -->
+                    </select>
+                    <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-4 text-gray-500">
+                        <i class="fas fa-chevron-down text-xs"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Result Area -->
+            <div id="resultCard" class="hidden transform transition-all duration-500 ease-out translate-y-4 opacity-0">
+                <div class="bg-indigo-50 border border-indigo-100 rounded-lg p-5 text-center">
+                    <p class="text-gray-500 text-sm mb-1">已選擇</p>
+                    <h2 id="selectedName" class="text-xl font-bold text-gray-800 mb-4"></h2>
+                    
+                    <a id="evaluateLink" href="#" target="_blank" class="inline-flex items-center justify-center w-full px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-all shadow-md hover:shadow-lg transform hover:-translate-y-0.5">
+                        <i class="fas fa-external-link-alt mr-2"></i>
+                        開啟評估表單
+                    </a>
+                    
+                    <button onclick="copyLink()" class="mt-3 text-indigo-600 hover:text-indigo-800 text-sm font-medium focus:outline-none">
+                        <i class="far fa-copy mr-1"></i> 複製連結
+                    </button>
+                    <div id="copyMessage" class="h-4 text-xs text-green-600 mt-1 opacity-0 transition-opacity">已複製到剪貼簿!</div>
+                </div>
+            </div>
+
+            <!-- Empty State -->
+            <div id="emptyState" class="text-center py-6 text-gray-400">
+                <i class="fas fa-user-friends text-4xl mb-3 opacity-30"></i>
+                <p class="text-sm">尚未選擇任何人員</p>
+            </div>
+
+        </div>
+        
+        <!-- Footer -->
+        <div class="bg-gray-50 px-6 py-3 border-t border-gray-100 flex justify-between items-center">
+            <span class="text-xs text-gray-400" id="recordCount"></span>
+            <span class="text-xs text-gray-400">系統版本 v1.0</span>
+        </div>
+    </div>
+
+    <script>
+        // Data Source
+        const rawData = [
+            { name: "(001) 吳庭維", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(001) 張鐦仁", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(005) 王苡芊", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(008) 鍾竺岑", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(009) 陳郁翔", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(012) 蘇筱恩", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(014) 莊子賢", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(015) 謝昀臻", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(016) 王寶倫", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(017) 林奕岑", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(019) 郭宥渝", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(020) 陳弘恩", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(021) 王閔玄", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(022) 林于倫", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(022) 陳旻榆", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(024) 林世芳", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(025) 葉子晴", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(025) 鄭宇媃", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(027) 王念筠", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(028) 廖述同", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(039) 洪慶民", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(044) 黃碩園", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(046) 田文心", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(047) 謝坤恩", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(053) 李淳芸", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(054) 李若綺", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(055) 劉思妤", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(056) 張舒涵", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(060) 卓昌宏", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(062) 覃彥瑜", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(064) 傅思宸", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(065) 林慧欣", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(067) 鄭暐曦", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(068) 葉冠宏", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(071) 李嘉程", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(072) 李宥安", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(073) 楊喬甯", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(075) 陳品淳", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(078) 袁靖喬", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(080) 王頤", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(087) 周成威", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(088) 羅于倫", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(094) 賴柏元", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(099) ALFRED ANTONIO", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(099) 王貞予", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(105) 陳證宇", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(106) 陳尚恩", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(109) 邱宇婕", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(112) 姚玟卉", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(114) 張芷綺", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(116) 李翊誠", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(119) 王梓縈", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(122) 黃美森", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(124) 溫家樣", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(125) 鄧金沛", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(126) 魏秀芳", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(130) 鄧天翼", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(132) 張桂薰", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(134) 匡顯國", url: "https://docs.google.com/forms/d/e/1FAIpQLSes9wWIvS1MSKI_5N5HchWzMWrQROZdkqpaQBWl-NiTVPqvaA/viewform?usp=publish-editor" },
+            { name: "(135) 張素美", url: "https://docs.google.com/forms/d/e/1FAIpQLScZLkxJhMqvHLp4-bUrMxuQZCsShmVxhPd-Ns9hBgQZUP89CQ/viewform?usp=publish-editor" },
+            { name: "(136) 張華愛", url: "https://docs.google.com/forms/d/e/1FAIpQLSfP5LMRcrl87hlILdkc6WdAcdcmV0_pKNxsnqzyPvlVgY4yUg/viewform?usp=publish-editor" },
+            { name: "(138) 顏勇升", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" },
+            { name: "(257) 曾耀鋒", url: "https://docs.google.com/forms/d/e/1FAIpQLSf_2UBTkNGDc91Ac-B86AoLik-B-OcjHuMXg91kp8VpSEvoZg/viewform?usp=publish-editor" },
+            { name: "(416) 吳家弘", url: "https://docs.google.com/forms/d/e/1FAIpQLScR7Z3QlzmjNtOqgXo316EFPcJd29RrWrofbnDMumY6EOEm_g/viewform?usp=publish-editor" }
+        ];
+
+        // Init
+        document.addEventListener('DOMContentLoaded', () => {
+            const select = document.getElementById('nameSelect');
+            const resultCard = document.getElementById('resultCard');
+            const emptyState = document.getElementById('emptyState');
+            const selectedName = document.getElementById('selectedName');
+            const evaluateLink = document.getElementById('evaluateLink');
+            const recordCount = document.getElementById('recordCount');
+
+            // Populate Dropdown
+            rawData.forEach(person => {
+                const option = document.createElement('option');
+                option.value = person.url;
+                option.textContent = person.name;
+                select.appendChild(option);
+            });
+
+            // Set record count
+            recordCount.textContent = `共 ${rawData.length} 筆資料`;
+
+            // Event Listener
+            select.addEventListener('change', function() {
+                const url = this.value;
+                const name = this.options[this.selectedIndex].textContent;
+
+                if (url) {
+                    // Show Result
+                    selectedName.textContent = name;
+                    evaluateLink.href = url;
+                    
+                    // Toggle visibility with transition
+                    emptyState.classList.add('hidden');
+                    resultCard.classList.remove('hidden');
+                    
+                    // Small delay to allow 'hidden' removal to register before opacity change
+                    setTimeout(() => {
+                        resultCard.classList.remove('translate-y-4', 'opacity-0');
+                    }, 10);
+                } else {
+                    // Hide Result
+                    resultCard.classList.add('translate-y-4', 'opacity-0');
+                    setTimeout(() => {
+                        resultCard.classList.add('hidden');
+                        emptyState.classList.remove('hidden');
+                    }, 300);
+                }
+            });
+        });
+
+        // Copy Link Functionality
+        function copyLink() {
+            const url = document.getElementById('evaluateLink').href;
+            const message = document.getElementById('copyMessage');
+            
+            // Create temporary input to copy from
+            const tempInput = document.createElement('input');
+            tempInput.value = url;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand('copy');
+            document.body.removeChild(tempInput);
+
+            // Show success message
+            message.style.opacity = '1';
+            setTimeout(() => {
+                message.style.opacity = '0';
+            }, 2000);
+        }
+    </script>
+</body>
+</html>
