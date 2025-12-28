@@ -92,5 +92,17 @@
     [
       "I agree."
     ]
+  ],
+  [
+    "2025-12-28T11:13:57.949Z",
+    "(028) 廖述同",
+    "411473028",
+    "期末報告",
+    "https://youtu.be/HgoLcGVxCTI",
+    "本專題使用政府資料開放平台之「桃園市公共自行車啟用站位數」資料，於 Google Colab 的 R 環境中進行探索性資料分析（EDA）。透過建立 Codebook、資料清洗與多維度視覺化，分析桃園市公共自行車的啟用狀況。 ",
+    "https://colab.research.google.com/drive/1VoIvNWbeQAanle6-9S1ybHH_9xshJ_kC?usp=sharing",
+    [
+      "I agree."
+    ]
   ]
 ]
